@@ -1,0 +1,336 @@
+/* ----------------------------
+   RESET STYLES
+   Remove browser default spacing
+   and make box-sizing easier
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------
+   BODY BASE STYLES
+   Set font, background, and text color
+---------------------------- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Arial, Verdana, sans-serif"
+ line-height: 2;
+  background: #f9fafb;
+  color: #333;
+}
+
+/* ----------------------------
+   HEADER SECTION
+   Colorful gradient background,
+   centered text, rounded bottom
+---------------------------- */
+header {
+  text-allign: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6, #933ea0);
+  color: white;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 2);
+
+}
+
+/* ----------------------------
+   HEADER TITLE & SUBTEXT
+   Make main title big and
+   subtitle slightly smaller
+---------------------------- */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------------
+   NAVIGATION BAR
+   Use flexbox for horizontal layout
+   Wrap on small screens
+---------------------------- */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* ----------------------------
+   NAVIGATION LINKS
+   Styled like buttons with hover effect
+---------------------------- */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem, 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0, 15);
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale (1.05);
+}
+
+/* ----------------------------
+   MAIN CONTENT CONTAINER
+   Limit width for readability
+   Center align with margins
+---------------------------- */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ----------------------------
+   SECTIONS
+   White card-like box with shadow
+   Rounded corners for modern look
+---------------------------- */
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: green;
+  border-bottom: 3px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+
+}
+
+/* ----------------------------
+   ARTICLES
+   Add spacing between groups of tags
+---------------------------- */
+article {
+  margin-bottom: 1.5rem;
+}
+
+/* ----------------------------
+   INLINE TEXT STYLING
+   Add color to tags like <strong>, <em>, etc.
+---------------------------- */
+
+strong {
+  color: #dc2626;
+}
+
+em {
+  color: #9333ea
+}
+
+mark {
+  bakground: #fde68a;
+}
+
+del {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+ins {
+  color: #16a34a;
+  text-decoration;
+  underline;
+}
+
+/* ----------------------------
+   BLOCKQUOTE
+   Styled with left border,
+   background and italics
+---------------------------- */
+blockquote {
+  border-left: 5px solid #3b82fc;
+  background: #f3f4;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  border-radius: 0.5rem;
+}
+
+/* ----------------------------
+   LISTS
+   Add spacing for ul/ol/dl
+---------------------------- */
+ul,
+ol {
+  margin: 1rem 0 1rem 2rem;
+}
+
+dl dt {
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+/* ----------------------------
+   MEDIA ELEMENTS
+   Images, videos, audio, iframe
+   Get responsive size, shadow, and rounding
+---------------------------- */
+img,
+video,
+audio,
+iframe {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100% border-radius: 0.75rem;
+  box-shadow: 0 4px 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: rgb(214, 80, 235);
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid rgb(229, 168, 238);
+  text-align: left;
+}
+
+thead {
+  background: #e5e7eb;
+  font-weight: bold;
+}
+
+tfoot {
+  background: #e5e7eb;
+  fot-weight: bold;
+}
+
+form {
+  display: grid;
+  gap: 1.5rem;
+
+}
+
+fieldset {
+  border: 2px solid #2563eb;
+  padding: 1rem;
+  border-radius: 0.75rem;
+
+}
+
+legend {
+  font-weight: bold;
+  color: rgb(17, 170, 221);
+  padding: 0 0.5rem;
+}
+
+label {
+
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea,
+button {
+
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37,99,235,0,5);
+
+}
+
+button{
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+button:hover{
+  background: purple;
+  transform: translateY(-2px);
+}
+code{
+  background: #f3f4f6;
+  color: skyblue;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+pre {
+
+  background: #1e293b;
+  color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+
+}
+aside{
+  background: #fef3c7;
+  padding: 1rem;
+  border-left: 4px solid #f59eab0b;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+progress, meter {
+  width: 500px;
+  height: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+section#misc div {
+  padding: 1rem;
+  background: #d1e0e8;
+  border: 1px solid #38bdf8;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+/*--------------
+responsive design
+Adjust sizes for smaller screens
+---------------------*/
+
+@media(max-width: 768px){
+  header h1{
+    font-size: 2rem;
+}
+nav {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+section
+  padding: 1rem;
+}
